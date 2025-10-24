@@ -140,19 +140,20 @@
 
 <script>
 const materials = [
-  { categoria: "COPA", descricao: "COPO DESCARTÁVEL CAFÉ 50ML", codigo: "30023432", embalagem: "CT" },
-  { categoria: "COPA", descricao: "COPO DESCARTÁVEL ÁGUA 180ML", codigo: "30023433", embalagem: "CT" },
-  { categoria: "COPA", descricao: "ESPÁTULA DESCARTÁVEL P/ CAFÉ", codigo: "30005863", embalagem: "MI" },
+  { categoria: "CONSUMO", descricao: "COPO DESCARTÁVEL CAFÉ 50ML", codigo: "30023432", embalagem: "CT" },
+  { categoria: "CONSUMO", descricao: "COPO DESCARTÁVEL ÁGUA 180ML", codigo: "30023433", embalagem: "CT" },
+  { categoria: "CONSUMO", descricao: "ESPÁTULA DESCARTÁVEL P/ CAFÉ", codigo: "30005863", embalagem: "MI" },
   { categoria: "LIMPEZA", descricao: "ÁGUA SANITÁRIA", codigo: "30014041", embalagem: "L" },
   { categoria: "LIMPEZA", descricao: "ALCOOL 70° 1L", codigo: "30063218", embalagem: "UN" },
   { categoria: "LIMPEZA", descricao: "DESINFETANTE PINHO SOL", codigo: "30014044", embalagem: "PC" },
- { categoria: "COPA", descricao: "AÇUCAR REFINADO 1KG", codigo: "30027525", embalagem: "KG" },
-  { categoria: "COPA", descricao: "AGUA MINERAL C/ GÁS 350ML", codigo: "30014282", embalagem: "FARDINHO 12UN" },
-  { categoria: "COPA", descricao: "COPO DESCARTÁVEL CAFÉ 50ML", codigo: "30023432", embalagem: "CT" },
-  { categoria: "COPA", descricao: "COPO DESCARTÁVEL ÁGUA 180ML", codigo: "30023433", embalagem: "CT" },
-  { categoria: "COPA", descricao: "FILTRO DE PAPEL MELITA Nº103", codigo: "30014270", embalagem: "PC" },
-  { categoria: "COPA", descricao: "FILTRO DE PAPEL MELITA Nº4", codigo: "30027642", embalagem: "PC" },
-  { categoria: "COPA", descricao: "PÓ DE CAFÉ PILÃO 500G", codigo: "30027643", embalagem: "PC" },
+ { categoria: "CONSUMO", descricao: "AÇUCAR REFINADO 1KG", codigo: "30027525", embalagem: "KG" },
+  { categoria: "CONSUMO", descricao: "AGUA MINERAL C/ GÁS 350ML", codigo: "30014282", embalagem: "FARDINHO 12UN" },
+  { categoria: "CONSUMO", descricao: "COPO DESCARTÁVEL CAFÉ 50ML", codigo: "30023432", embalagem: "CT" },
+  { categoria: "CONSUMO", descricao: "COPO DESCARTÁVEL ÁGUA 180ML", codigo: "30023433", embalagem: "CT" },
+  { categoria: "CONSUMO", descricao: "ESPÁTULA DESCARTÁVEL P/ CAFÉ", codigo: "30005863", embalagem: "MI" },
+  { categoria: "CONSUMO", descricao: "FILTRO DE PAPEL MELITA Nº103", codigo: "30014270", embalagem: "PC" },
+  { categoria: "CONSUMO", descricao: "FILTRO DE PAPEL MELITA Nº4", codigo: "30027642", embalagem: "PC" },
+  { categoria: "CONSUMO", descricao: "PÓ DE CAFÉ PILÃO 500G", codigo: "30027643", embalagem: "PC" },
   { categoria: "LIMPEZA", descricao: "ÁGUA SANITÁRIA", codigo: "30014041", embalagem: "L" },
   { categoria: "LIMPEZA", descricao: "ALCOOL 70° 1L", codigo: "30063218", embalagem: "UN" },
   { categoria: "LIMPEZA", descricao: "ALCOOL EM GEL 500ML", codigo: "30063046", embalagem: "UN" },
@@ -167,7 +168,7 @@ const materials = [
   { categoria: "LIMPEZA", descricao: "SABONETE OASIS 90G", codigo: "30005679", embalagem: "UN" },
   { categoria: "LIMPEZA", descricao: "DETERGENTE NEUTRO 500ML", codigo: "30007890", embalagem: "FR" },
   { categoria: "LIMPEZA", descricao: "ALCOOL 70% 1L", codigo: "30003456", embalagem: "FR" },
-  { categoria: "LIMPEZA", descricao: "DESINFETANTE SAN PIC / PINHO SOL LAVANDA", codigo: "30005569", embalagem: "PC" },
+  { categoria: "LIMPEZA", descricao: "DESINFETANTE PINHO 1L", codigo: "30008765", embalagem: "FR" },
   { categoria: "LIMPEZA", descricao: "AGUA SANITÁRIA 1L", codigo: "30007891", embalagem: "FR" },
   { categoria: "LIMPEZA", descricao: "LIMPA VIDROS 500ML", codigo: "30007892", embalagem: "FR" },
   { categoria: "LIMPEZA", descricao: "DESENGORDURANTE MULTIUSO 500ML", codigo: "30007893", embalagem: "FR" },
@@ -180,12 +181,18 @@ const materials = [
   { categoria: "LIMPEZA", descricao: "RODO DE PLÁSTICO 40CM", codigo: "30001124", embalagem: "UN" },
   { categoria: "LIMPEZA", descricao: "BALDE PLÁSTICO 10L", codigo: "30001125", embalagem: "UN" },
   { categoria: "LIMPEZA", descricao: "ÁLCOOL GEL 500ML", codigo: "30007894", embalagem: "FR" },
-  { categoria: "COPA", descricao: "COPO DESCARTÁVEL 200ML", codigo: "30002222", embalagem: "CX" },
-  { categoria: "COPA", descricao: "GUARDANAPO DE PAPEL 23X23CM", codigo: "30002227", embalagem: "PT" },
-  { categoria: "COPA", descricao: "ADOÇANTE LÍQUIDO 100ML", codigo: "30002230", embalagem: "FR" },
-  { categoria: "COPA", descricao: "FILTRO DE PAPEL PARA CAFÉ", codigo: "30002231", embalagem: "CX" },
-  { categoria: "COPA", descricao: "GUARDANAPO INTERFOLHA", codigo: "30002232", embalagem: "PT" },
-  { categoria: "ESCRITORIO", descricao: "FITA ADESIVA TRANSPARENTE 45MM", codigo: "30004444", embalagem: "RL" },
+  { categoria: "CONSUMO", descricao: "COPO DESCARTÁVEL 200ML", codigo: "30002222", embalagem: "CX" },
+  { categoria: "CONSUMO", descricao: "PRATO DESCARTÁVEL 15CM", codigo: "30002223", embalagem: "CX" },
+  { categoria: "CONSUMO", descricao: "COLHER DESCARTÁVEL", codigo: "30002224", embalagem: "CX" },
+  { categoria: "CONSUMO", descricao: "GARFO DESCARTÁVEL", codigo: "30002225", embalagem: "CX" },
+  { categoria: "CONSUMO", descricao: "FACA DESCARTÁVEL", codigo: "30002226", embalagem: "CX" },
+  { categoria: "CONSUMO", descricao: "GUARDANAPO DE PAPEL 23X23CM", codigo: "30002227", embalagem: "PT" },
+  { categoria: "CONSUMO", descricao: "CAFÉ SOLÚVEL 50G", codigo: "30002228", embalagem: "PT" },
+  { categoria: "CONSUMO", descricao: "AÇÚCAR CRISTAL 1KG", codigo: "30002229", embalagem: "PT" },
+  { categoria: "CONSUMO", descricao: "ADOÇANTE LÍQUIDO 100ML", codigo: "30002230", embalagem: "FR" },
+  { categoria: "CONSUMO", descricao: "FILTRO DE PAPEL PARA CAFÉ", codigo: "30002231", embalagem: "CX" },
+  { categoria: "CONSUMO", descricao: "GUARDANAPO INTERFOLHA", codigo: "30002232", embalagem: "PT" },
+  { categoria: "CONSUMO", descricao: "FITA ADESIVA TRANSPARENTE 45MM", codigo: "30004444", embalagem: "RL" },
  { categoria: "LIMPEZA", descricao: "SOLIDIUM EM PÓ 500G", codigo: "30014046", embalagem: "RL" },
   { categoria: "EPI", descricao: "BOTINA SEG ELETR NOB MR BIQCOMP Nº35", codigo: "30054021", embalagem: "PAR" },
   { categoria: "EPI", descricao: "CAPACETE ABA FRONTAL BR CATRACA JUGULAR", codigo: "30024209", embalagem: "PC" },
@@ -201,14 +208,14 @@ const materials = [
   { categoria: "EPI", descricao: "LUVA VAQUETA", codigo: "30005343", embalagem: "PAR" },
   { categoria: "EPI", descricao: "LUVA LATEX 208 TAM. 9 COR LARANJA", codigo: "30013906", embalagem: "PAR" },
   { categoria: "EPI", descricao: "MACACAO PES MASC RIPSTOP AZM CURT G", codigo: "30063854", embalagem: "PC" },
-  { categoria: "EPI", descricao: "MACACAO PROT G TYCHEM SL DUPONT TYVEK", codigo: "30013988", embalagem: "PC" },
+  { categoria: "EPI", descricao: "MACACAO PROT G TYCHEM SL DUPONT tyvek", codigo: "30013988", embalagem: "PC" },
   { categoria: "EPI", descricao: "MASCARA FACIAL G PANORAMA 3M", codigo: "30033456", embalagem: "PC" },
   { categoria: "EPI", descricao: "MASCARA FACIAL M PANORAMA 3M", codigo: "30033455", embalagem: "PC" },
-  { categoria: "ESCRITORIO", descricao: "FITA ADES CREP 48MM CR 40M24UN", codigo: "30055050", embalagem: "RL" },
+{ categoria: "ESCRITORIO", descricao: "FITA ADES CREP 48MM CR 40M24UN", codigo: "30055050", embalagem: "RL" },
 { categoria: "ESCRITORIO", descricao: "FITA ADES DUREX PET 50MM TR100M", codigo: "30054394", embalagem: "RL" },
 { categoria: "ESCRITORIO", descricao: "FITA ADES CREP 48MM CR 40M24UN", codigo: "30000024", embalagem: "RL" },
- { categoria: "ESCRITORIO", descricao: "FITA P/ISOLAMENTO;INTERDITADO;ROLO200M", codigo: "30013965", embalagem: "RL" },
- ];
+ { categoria: "ESCRITORIO", descricao: "FITA P/ISOLAMENTO;INTERDITADO;", codigo: "30013965", embalagem: "RL" },
+];
 
 const container = document.getElementById("materialsContainer");
 const cartItems = document.getElementById("cartItems");
@@ -292,7 +299,3 @@ if ('serviceWorker' in navigator) {
 </script>
 
 </html>
-
-
-
-
